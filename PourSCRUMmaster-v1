@@ -16,7 +16,9 @@
                                                                             → Société*                                              //
                                                                             → Adresse eMail*                                        //  * Champs Obligatoires
                                                                             → TextArea (champs de texte sur plusieurs lignes)       //
-                                                                            → Bouton "Annuler"                                      //
+                                                                            → CAPTCHA                                               //
+                                                                            → Validation stockage données → checkbox + texte
+                                                                            → Bouton "Annuler"
                                                                             → Bouton "Envoyer"
                   → AssurancePage       → Texte description (Lorem Ipsum)
                                         → Formulaire de contact             → Nom*
@@ -24,7 +26,9 @@
                                                                             → Société*                                              //
                                                                             → Adresse eMail*                                        //  * Champs Obligatoires
                                                                             → TextArea (champs de texte sur plusieurs lignes)       //
-                                                                            → Bouton "Annuler"                                      //
+                                                                            → CAPTCHA                                               //
+                                                                            → Validation stockage données → checkbox + texte
+                                                                            → Bouton "Annuler"
                                                                             → Bouton "Envoyer"
 ===================================================================================================================================================================
 → Footer          → Mentions Légales
