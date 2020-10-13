@@ -6,21 +6,27 @@
                                         → Page Assurance      → Faux Texte
                                                               → Formulaire de contact
                   → Image BackGround
-
-
-
-
+===================================================================================================================================================================
 → Bloc central    → HomePage            → H1
                                         → PunchLine
                                         → 2 Call To Action (Texte + icône (facultatif) + lien ou bouton)
                   → BankPage            → Texte description (Lorem Ipsum)
-                                        → Formulaire de contact             → Quels champs pour le formulaire ?
+                                        → Formulaire de contact             → Nom*
+                                                                            → Prénom*
+                                                                            → Société*                                              //
+                                                                            → Adresse eMail*                                        //  * Champs Obligatoires
+                                                                            → TextArea (champs de texte sur plusieurs lignes)       //
+                                                                            → Bouton "Annuler"                                      //
+                                                                            → Bouton "Envoyer"
                   → AssurancePage       → Texte description (Lorem Ipsum)
-                                        → Formulaire de contact             → Quels champs pour le formulaire ?
-
-
-
-
+                                        → Formulaire de contact             → Nom*
+                                                                            → Prénom*
+                                                                            → Société*                                              //
+                                                                            → Adresse eMail*                                        //  * Champs Obligatoires
+                                                                            → TextArea (champs de texte sur plusieurs lignes)       //
+                                                                            → Bouton "Annuler"                                      //
+                                                                            → Bouton "Envoyer"
+===================================================================================================================================================================
 → Footer          → Mentions Légales
                   → Liens du Menu       → Home
                                         → Bank
