@@ -1,0 +1,69 @@
+
+body{
+    background-color: #F7F4F1;
+}
+
+.carre {
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    line-height: 20px;
+    width: 80%;
+    height: 750px;
+    left: 50%;
+    margin-left: -40%;
+    background: #FFFFFF;
+    margin-top: 347px;
+    
+}
+
+  body .carre p{
+    margin-top: 72px;
+    font-size: 37px;
+    font-family: 'Asap', sans-serif;
+
+}
+
+
+
+.formulaire{
+    
+    text-decoration: none;
+    font-family: 'Asap', sans-serif;
+}
+
+.input{
+    padding-top: 20px;
+    line-height: 10px;
+    font-size: 200px;
+    
+    
+}
+
+.checkbox{
+    font-size: 12px;
+    font-family: 'Asap', sans-serif;
+    color: grey;
+    margin-right: 310px;
+    line-height: 70px;
+    margin-left: 30px;
+    
+}
+
+input#reset{
+    background: #9098A1;
+    color: #FFFFFF;
+    border-radius: 7px;
+    padding: 5px 5px 10px 10px;
+    margin-top: 50px;
+
+}
+
+input#submit{
+    background: #004AD7;
+    color: #FFFFFF;
+   border-radius: 7px;
+   padding: 5px 5px 10px 10px;
+   
+    
+}

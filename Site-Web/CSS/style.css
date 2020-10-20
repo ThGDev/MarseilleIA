@@ -1,0 +1,339 @@
+/* CSS DU GROUPE (modifs -> Thierry ^^') */
+
+/* ########################################## CSS DE JULIETTE (Header + Menu) ########################################## */
+html, body {
+    margin: 0px;
+    padding: 0px;
+    padding: 0px;
+    height : 100%
+}
+body {
+    background-color:#F7F4F1;
+    margin: auto;
+    font-family: 'Asap', sans-serif;
+}
+/* ---------------------------------- HEADER ---------------------------------- */
+header {
+    background-image: url("../IMG/Marseille-Header-BG.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 550px;
+    color: #ffffff;
+}
+header ul {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Asap', sans-serif;
+}
+/* === Logo Header === */
+body header div#logo {
+    text-align: center;
+    padding-top: 1.5625rem;
+}
+body header div#logo a {
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: #ffffff;
+}
+body header div#logo img {
+    vertical-align: middle;
+}
+/* === Menu SOCIAL Header === */
+.icone{
+    color : #FFFFFF;
+    text-align: right;
+    margin-right: 30px;
+    word-spacing: 10px;
+    /*font-family: 'Asap', sans-serif;*/
+    font-size: 15px;
+    line-height: 35px;
+    margin-top: -80px;
+}
+/* === Menu HOVER Header === */
+
+/* Affichage symbole ☰ du menu */
+.deroulant > a::before{
+    content:"☰";
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: bold;  
+}
+
+/* Début de la NAV */
+nav {
+    display: block;
+    width: 250px;
+    height: 70px;
+    background-color:#0047A3;
+    position: absolute;
+    top: 0px;
+}
+nav ul li {
+    width: 100%;
+    text-align: center;
+}
+nav ul::after {    
+    display: table;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    /*border-bottom: 2px solid transparent;*/
+    padding: 10% 0 10% 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* === Sous-Menu HOVER Header === */
+.sous-menu{
+    display: none;
+    background-color: #0047A3;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous-menu{                   /* AU SURVOL DISPLAY BLOCK */
+    display: block;
+}
+body nav ul li.deroulant ul.sous-menu li a{     /* PADDING DES LIENS SOUS-MENU */
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 100;
+}
+body nav ul li.deroulant ul.sous-menu li {      /* STYLE LISTE SOUS-MENU */
+    color: #002454;
+    background-color:#FFFFFF;    
+    display: block;
+    text-align: left;
+}
+/*body nav ul li.deroulant ul.sous-menu li:first-child {*/  /* STYLE élément de liste "Vous-êtes :" */
+/*    width: 94%;
+    padding: 10px 0 10px 10px;
+}*/
+body nav ul li.deroulant ul.sous-menu li i {    /* LARGEUR DES ICONES MENU POUR TEXTE LIEN TOUS SUR MEME LIGNE */
+    width: 30px;
+}
+/* ++ STYLE DES ELEMENTS DE SOUS MENU */
+.btn {
+    color: #002454;
+    background-color:#FFFFFF;
+}
+.btn:hover {
+    color: #FFFFFF;
+}
+.un:hover{
+    background-color:#DA1984;
+}
+.deux:hover{
+    background-color: #0095FF;
+}
+.trois:hover{
+    background-color: #D90020;
+}
+.quatre:hover{
+    background-color: #fb8c00;
+}
+.cinq:hover{
+    background-color: #00af5E;
+}
+
+/* ============== POUR CONTENU GENERAL PAGES ============ */
+.logo {
+    width: 75px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.ButtonForm {                   /* le bouton vers le formulaire de contact en bas */
+    position: relative;
+    left: 50%;
+    margin-left: -185px;
+    width: 370px;
+    display: block;
+    margin-top: 50px !important;
+    height: 53px;
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 5px;
+    background-color: #0B5FFF;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 53px;
+}
+
+/* ########################################## CSS DE YVAN (Main -> call to action button) ############################# */
+main {
+    position: relative;
+    background-color: #ffffff;
+    width: 1120px;
+    left: 50%;
+    margin: -100px 0 100px -560px;
+    padding: 5px 0 50px 0;
+    /*position: relative;
+    left: 50%;
+    margin-top: 370px;
+    margin-left: -45%;
+    width: 90%;
+    background-color: #ffffff;*/
+}
+main h1, main h2, main h4 {
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+}
+main h1 {
+    vertical-align: middle;
+    font-size: 46px;
+    color: #0047A3;
+}
+main h2{
+    font-size: 36px;
+    color: #000000      
+} 
+main h3 {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: justify;
+    color: #000000;    
+}
+main button.buton {
+    width: 320px;
+    height: 53px; 
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+    position: relative;
+    left: 36.5%;
+    right: 48%;
+    margin-top: 5px;
+    background-color: #27AE60;
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    cursor: pointer;
+}
+main img.logocentre {
+    position: relative;
+    left: 30%;
+    margin-top: 10px; 
+    right: 50%;
+}
+main section article.ContenuPages {    
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
+ }
+main img.ImgIllust {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+/* ########################################## CSS DE LE (éléments boxes x5) ########################################## */
+body main section.box {
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    position: relative;
+    display: flex;
+    width: 1120px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+body main section article.ItemsHome {
+    width: 210px;
+    margin: 10px 45px 10px 45px;
+    padding: 1em;
+    text-align: center;
+    display: inline-block;
+}
+
+body main section article a.FakeButton{
+    color: #0b5fff;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0;
+    border: 2px solid #0b5fff;
+    border-radius: 5px;
+}
+
+/* ########################################## CSS DE THIERRY (footer) ########################################## */
+/* ------------------------------------ FOOTER ----------------------- */
+body footer {
+    background-color: #0047a3;
+    opacity: 0.99;
+    padding-top: 2.5rem;
+    position: relative;
+    color: #ffffff;
+    margin: 0px;
+    font-family: 'Asap', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+body footer::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: 280px;
+    background-position: 50%;
+    background-image: url(../IMG/blason-BIG.png);
+    z-index: -1;
+}
+body footer .sep {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+body footer .footer-div {
+    width: 200px;
+    margin: 0 20px 0 20px;
+}
+body footer .footer-div h6 {
+    font-size: 15px;
+    margin: 0 0 20px 0;
+}
+body footer .footer-div p {
+    font-size: 14px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    margin-bottom: 0.3125rem;
+}
+body footer .footer-div p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+body footer ul#footer-nav {
+    padding: 10px 0 10px 0;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    position: relative;
+    /* left: 50%; */
+    /* margin-left: -36%; */
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+body footer ul#footer-nav li {
+    display: inline;
+}
+body footer ul#footer-nav li a {
+    color: #ffffff;
+    width: 200px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0 15px 0 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}

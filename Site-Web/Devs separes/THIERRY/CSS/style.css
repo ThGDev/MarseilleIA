@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/* ------------------------------------ INITIALISATION POLICE SITE ----------------------- */
+/*! Generé par Transfonter (https://transfonter.org) */
+/* ORKNEY */
+@font-face {
+    font-family: 'Orkney-Light';
+    src: url('FONT/Orkney-Light.woff2') format('woff2'),
+        url('FONT/Orkney-Light.woff') format('woff'),
+        url('FONT/Orkney-Light.svg#Orkney-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orkney-Bold';
+    src: url('FONT/Orkney-Bold.woff2') format('woff2'),
+        url('FONT/Orkney-Bold.woff') format('woff'),
+        url('FONT/Orkney-Bold.svg#Orkney-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orkney-Medium';
+    src: url('FONT/Orkney-Medium.woff2') format('woff2'),
+        url('FONT/Orkney-Medium.woff') format('woff'),
+        url('FONT/Orkney-Medium.svg#Orkney-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orkney-Regular';
+    src: url('FONT/Orkney-Regular.woff2') format('woff2'),
+        url('FONT/Orkney-Regular.woff') format('woff'),
+        url('FONT/Orkney-Regular.svg#Orkney-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* IcoMoon */
+@font-face {
+    font-family: 'IcoMoon-Free';
+    src: url('FONT/IcoMoon-Free.woff2') format('woff2'),
+        url('FONT/IcoMoon-Free.woff') format('woff'),
+        url('FONT/IcoMoon-Free.svg#IcoMoon-Free') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ------------------------------------ STYLES PRINCIPAUX ----------------------- */
+html, body {
+    margin: 0px;
+    padding: 0px;
+    padding: 0px;
+    height : 100%
+}
+body {
+    font-family: orkney;
+    background-color: #F7F4F1;
+}
+
+/* ========== HEADER =========== */
+body header {
+    background-image: url("../IMG/Marseille-Header-BG.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 550px;
+    color: #ffffff;
+}
+body header div#logo {
+    text-align: center;
+    padding-top: 1.5625rem;
+}
+body header div#logo p {
+    display: inline-block;
+}
+body header div#logo p a {
+    font-size: 2rem;
+    font-weight: 600;
+}
+body header div#logo img {
+    vertical-align: middle;
+}
+/* ========== SELECT LANGUES ========== */
+body header select#langues {
+	width: 48px;
+    padding: 5px;
+    font-family: orkney;
+    color: #ffffff;
+    line-height: 1;
+    border: 0;
+    border-radius: 5px;
+    height: 34px;
+    background: url("../IMG/arrow-d.png") no-repeat right;
+    /*background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;*/
+    background-color: rgba(255, 255, 255, 0.0);
+    -webkit-appearance: none;
+    background-position-x: 25px;
+}
+
+/* ========== SOCIAL ========== */
+body header nav#social {
+    /* pour info */
+    border: 1px solid #000000;
+    position: relative;
+
+}
+body header nav#social ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0 0.3125rem;
+}
+body header nav#social ul li a {
+    font-family: IcoMoon-Free;
+}
+
+/* =========== LIENS ============*/
+body header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ------------------------------------ CONTENU ----------------------- */
+body #main {
+    position: relative;
+    background-color: #ffffff;
+    width: 1120px;
+    left: 50%;
+    margin: -100px 0 100px -560px;
+    padding: 5px 0 50px 0;
+}
+body #main section article.info_home h1 {
+    font-size: 43px;
+    font-weight: 600;
+    color: #0047A3;
+    text-align: center;
+}
+body #main section article.info_home h2 {
+    font-size: 36px;
+    text-align: center;
+}
+body #main section article.info_home span.img {
+    display: inline-block;
+    width: 1120px;
+    height: 292px;
+    background-color: #010E21;
+}
+body #main section article.info_home p#accroche {
+    font-size: 48px;
+    text-align: center;
+    padding: 0px 50px 0 50px;
+}
+/* BOUTON CALL TO ACTION */
+body #main section article.info_home button {
+    font-family: Orkney;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+    background: #27AE60;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 10px 10px 10px;
+    position: relative;             /*          */
+    margin: 50px;                   /*  TRICK   */
+    width: 400px;                   /*  POUR    */
+    left: 50%;                      /*  CENTRER */
+    margin-left: -200px;            /*          */
+    display: inline-block;
+    cursor: pointer;
+    -ms-transform: translate(100%, 0);
+    /*transform: translate(100%, 0);    Propriété à mieux connaître pour utiliser...*/
+}
+
+/* ========== Items Séparés ========== */
+body #main section#separated_items_home {
+    /* pour info
+    border: 1px solid #000000; */
+
+    position: relative;
+    display: flex;
+    width: 1120px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+body #main section article.items_home {
+    /* pour info
+    border: 1px solid #000000; */
+
+    width: 210px;
+    margin: 10px 45px 10px 45px;
+    padding: 1em;
+    text-align: center;
+    display: inline-block;
+}
+body #main section article.items_home h3 {
+    margin: 5px 0 0 0;
+}
+body #main section article.items_home p {
+    margin: 5px 0 10px 0;
+    text-align: center;
+}
+/* BOUTONS ITEMS HOME */
+body #main section article.items_home button {
+    font-family: Orkney;
+    font-weight: 500;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 2px solid #0B5FFF;
+    color: #0B5FFF;
+    padding: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* ------------------------------------ FOOTER ----------------------- */
+body footer {
+    background-color: #0047a3;
+    opacity: 0.99;
+    padding-top: 2.5rem;
+    position: relative;
+    color: #ffffff;
+    margin: 0px;
+}
+body footer::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: 280px;
+    background-position: 50%;
+    background-image: url(../IMG/blason-BIG.png);
+    z-index: -1;
+}
+body footer .footer-div, span.vseparator {
+    float: left;
+}
+body footer .footer-div {
+    width: 200px;
+    margin: 0 20px 0 20px;
+}
+body footer .footer-div h6 {
+    font-size: 15px;
+    margin: 0 0 20px 0;
+}
+body footer .footer-div p {
+    font-size: 14px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    margin-bottom: 0.3125rem;
+}
+body footer .footer-div p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+body footer nav#footer-nav {
+    padding: 10px 0 10px 0;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    margin-left: -36%;
+}
+body footer nav#footer-nav ul {
+    margin: 0px;
+}
+body footer nav#footer-nav ul li {
+    display: inline;
+}
+body footer nav#footer-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0 15px 0 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ------------------------------------ SEPARATEURS (lignes) FOOTER ----------------------- */
+body footer span {
+    display: inline-block;
+    opacity: 0.3;
+}
+body footer span.vseparator {
+    /* exemple */
+    border-left: 1px solid #ffffff;
+    height: 130px;
+}
+body footer span.hseparator {
+    /* exemple */
+    clear: both;
+    border-top: 1px solid #ffffff;
+    width: 100%;
+}
